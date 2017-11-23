@@ -3,7 +3,7 @@
 
   <xacro:include filename="$(find cob_description)/urdf/sensors/kinect.gazebo.xacro" />
 
-  <xacro:macro name="cob_kinect_v0" params="name parent *origin ros_topic update_rate:=20 data_skip:=0 height:=480 width:=640">
+  <xacro:macro name="cob_kinect_v0" params="name parent *origin ros_topic update_rate:=20 data_skip:=0 height:=1024 width:=1280">
     <joint name="${name}_joint" type="fixed">
       <xacro:insert_block name="origin" />
       <parent link="${parent}"/>
